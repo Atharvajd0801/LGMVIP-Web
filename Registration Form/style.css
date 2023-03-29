@@ -1,0 +1,167 @@
+* {
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(130deg, rgb(17, 162, 188), rgb(46, 159, 11));
+}
+
+.container {
+    max-width: 793px;
+    width: 53%;
+    padding: 29px 154px 23px;
+    background-color: #74b0c0;
+    border-radius: 38px;
+    font-family: cursive;
+}
+
+.container.title {
+    font-size: 299px;
+    font-weight: 500;
+    position: absolute;
+}
+
+.container Form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -2px -16px 12px 0;
+}
+.title{
+    font-size: 32px;
+    text-align: center;
+    font-family: cursive;
+}
+Form.details {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+     
+}
+
+Form span {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.details input {
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.details input:focus,
+.details input:valid {
+    border-color: rgb(18, 13, 3);
+}
+
+Form.button {
+    height: 40px;
+    width: 100%;
+    margin: 40px 0;
+}
+
+Form .button input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    cursor: pointer;
+    background: linear-gradient(130deg, red, orange);
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+Form .button input:hover {
+    background: linear-gradient(130deg, orange, red);
+}
+.button {
+    height: 45px;
+}
+
+.button {
+    padding: 0px;
+    display: inherit;
+    justify-content: center;
+    height: 40px;
+    width: 197%;
+    border-radius: 5px;
+    border: none;
+    color: #170808;
+    font-size:  20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: cursive;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #eb0db7, #e65c07);
+}
+tables,
+th,     
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 15px;
+    font-family: sans-serif;
+    padding: 10px;
+    font-weight: 300;
+}
+
+th {
+    width: 20%;
+}
+
+tables {
+    position: relative;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.tbll {
+    margin-top: 10%;
+    background-color: #fff;
+
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(27, 27, 27, 0.15);
+}
+
+@media(max-width: 584px) {
+    .container {
+        max-width: 100%;
+    }
+
+    Form.details {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .container Form {
+        max-height: 400px;
+        overflow-y: scroll;
+    }
+
+    .container Form::-webkit-scrollbar {
+        width: 0;
+    }
+
+    Form.button {
+        margin: 20px 0;
+    }
+}
